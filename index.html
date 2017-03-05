@@ -12,7 +12,7 @@
 
   <body>
     <div class="container">
-      <form class="form-signin">
+      <form class="form-signin" onsubmit="return false">
         <h2 id="form-signin-heading">
           Please sign in
         </h2>
@@ -26,17 +26,18 @@
           Password
         </label>
         <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
-        
+
         <div class="checkbox">
           <label>
             <input type="checkbox" value="remember-me">
             <span>Remember me<span>
           </label>
         </div>
-        <button class="btn btn-lg btn-primary btn-block submit-btn" type="submit">Sign in</button>
+        <button class="btn btn-lg btn-primary btn-block submit-btn" type="submit" onclick="imprimir()">Sign in</button>
       </form>
-    </div> 
-    <!-- /container -->
+    </div>
+    <div id = "conteiner" class="contenedor">
+    </div>
 
     <script  type='text/javascript' src='js/main.js'></script>
   </body>
